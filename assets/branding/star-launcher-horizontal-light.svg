@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360">
+  <defs>
+    <style>
+      .indigo { fill: #4257c7; }
+      .ink { fill: #f4f7fb; }
+      .white { fill: #192131; }
+      .orbit {
+        fill: none;
+        stroke: #4257c7;
+        stroke-width: 6;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+
+  <!-- Clean circular orbit centered at 198,160. -->
+  <path class="orbit"
+        d="M 95.6,227.7
+           A 124,124 0 1 0 278.3,60.3"/>
+
+  <!-- Symmetrical eight-point navigation star, enlarged 10% and visually centered. -->
+  <path class="white"
+        transform="translate(198 152) scale(1.1) translate(-198 -160)"
+        d="M 198,92
+           L 203.4,147.1
+           L 227.7,130.3
+           L 210.9,154.6
+           L 266,160
+           L 210.9,165.4
+           L 227.7,189.7
+           L 203.4,172.9
+           L 198,228
+           L 192.6,172.9
+           L 168.3,189.7
+           L 185.1,165.4
+           L 130,160
+           L 185.1,154.6
+           L 168.3,130.3
+           L 192.6,147.1 Z"/>
+
+  <!-- File stop on the orbit. -->
+  <g transform="translate(73 218)">
+    <rect class="indigo" x="0" y="0" width="48" height="44" rx="10"/>
+    <path class="ink" d="M15,10 H28 L36,18 V34 H15 Z M28,11 V19 H35"
+          fill-rule="evenodd"/>
+  </g>
+
+  <!-- Tool stop on the orbit. -->
+  <g transform="translate(174 258)">
+    <rect class="indigo" x="0" y="0" width="48" height="44" rx="10"/>
+    <path class="ink"
+          d="M32,10 C27,7 21,9 19,14 C18,17 19,20 21,22
+             L12,31 C10,33 10,36 12,38 C14,40 17,40 19,38
+             L28,29 C30,31 34,31 37,29 C41,26 42,20 39,16
+             L33,22 L28,17 Z"/>
+  </g>
+
+  <!-- Globe stop on the orbit. -->
+  <g transform="translate(270 218)">
+    <rect class="indigo" x="0" y="0" width="48" height="44" rx="10"/>
+    <circle class="ink" cx="24" cy="22" r="13"/>
+    <circle class="indigo" cx="24" cy="22" r="9"/>
+    <path d="M15,22 H33 M24,13 C19,18 19,26 24,31
+             M24,13 C29,18 29,26 24,31"
+          fill="none" stroke="#f4f7fb" stroke-width="2.5"/>
+  </g>
+
+  <!--
+    Rear-center anchor = (278.3, 60.3).
+    The ship centerline is the exact tangent to the orbit at that point.
+    Drawing the ship after the orbit hides the line end beneath the central nozzle.
+  -->
+  <g transform="translate(278.3 60.3) rotate(-140) scale(0.9)">
+    <path class="white"
+          d="M -5,-5
+             L 5,-8
+             L 11,-18
+             L 18,-22
+             L 25,-12
+             L 35,-8
+             L 43,-7
+             L 47,-11
+             L 53,-10
+             L 56,-6
+             L 68,0
+             L 56,6
+             L 53,10
+             L 47,11
+             L 43,7
+             L 35,8
+             L 25,12
+             L 18,22
+             L 11,18
+             L 5,8
+             L -5,5 Z"/>
+    <rect class="white" x="-7" y="-3.5" width="8" height="7" rx="1"/>
+  </g>
+
+  <!-- Wordmark. -->
+  <text x="382" y="221"
+        font-family="Segoe UI, Arial, sans-serif"
+        font-size="142"
+        font-weight="600"
+        letter-spacing="-7">
+    <tspan fill="#192131">Star</tspan><tspan fill="#4257c7">-Launcher</tspan>
+  </text>
+</svg>

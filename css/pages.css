@@ -1,0 +1,250 @@
+.docs-hero {
+  padding-block: 10rem 4.5rem;
+  border-bottom: 1px solid var(--color-border);
+  background:
+    radial-gradient(circle at 72% 25%, var(--color-glow), transparent 22rem),
+    var(--color-background-raised);
+}
+
+.docs-hero-inner {
+  max-width: 54rem;
+}
+
+.docs-hero h1 {
+  margin-bottom: 1.25rem;
+  font-size: clamp(2.6rem, 6vw, 4.8rem);
+}
+
+.docs-hero p:last-child {
+  max-width: 44rem;
+  margin-bottom: 0;
+  font-size: 1.1rem;
+}
+
+.docs-layout {
+  display: grid;
+  grid-template-columns: 14rem minmax(0, 46rem);
+  gap: clamp(3rem, 8vw, 7rem);
+  align-items: start;
+}
+
+.docs-sidebar {
+  position: sticky;
+  top: 7rem;
+}
+
+.docs-sidebar strong {
+  display: block;
+  margin-bottom: 0.8rem;
+  color: var(--color-text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.docs-sidebar nav {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.docs-sidebar a {
+  padding: 0.55rem 0.75rem;
+  border-left: 2px solid transparent;
+  color: var(--color-text-muted);
+  font-size: 0.88rem;
+}
+
+.docs-sidebar a:hover,
+.docs-sidebar a[aria-current="page"] {
+  border-left-color: var(--color-primary);
+  color: var(--color-text);
+}
+
+.docs-content {
+  min-width: 0;
+}
+
+.docs-content section + section {
+  padding-top: 3rem;
+  margin-top: 3rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.docs-content h2 {
+  font-size: clamp(1.7rem, 3vw, 2.35rem);
+}
+
+.docs-content h3 {
+  margin-top: 2rem;
+}
+
+.docs-content p,
+.docs-content li {
+  max-width: 44rem;
+}
+
+.docs-content ol,
+.docs-content ul {
+  padding-left: 1.35rem;
+  color: var(--color-text-muted);
+}
+
+.docs-content li + li {
+  margin-top: 0.65rem;
+}
+
+.notice {
+  padding: 1rem 1.15rem;
+  margin-block: 1.5rem;
+  border: 1px solid var(--color-border);
+  border-left: 3px solid var(--color-warm-accent);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+}
+
+.notice strong {
+  color: var(--color-text);
+}
+
+.notice p {
+  margin: 0.3rem 0 0;
+}
+
+.download-page-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(20rem, 0.9fr);
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: start;
+}
+
+.download-release-card,
+.download-instructions {
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-card);
+}
+
+.download-release-card h2,
+.download-instructions h2 {
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+}
+
+.download-page-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-block: 1.75rem 1.25rem;
+}
+
+.download-verification {
+  margin-bottom: 0;
+  color: var(--color-text-muted);
+  font-size: 0.72rem;
+}
+
+.download-verification code {
+  display: block;
+  max-width: 100%;
+  margin-top: 0.4rem;
+  overflow-wrap: anywhere;
+  color: var(--color-text);
+  font-size: 0.68rem;
+}
+
+.download-instructions ol {
+  display: grid;
+  gap: 1.1rem;
+  padding: 0;
+  list-style: none;
+  counter-reset: download-step;
+}
+
+.download-instructions li {
+  display: grid;
+  grid-template-columns: 2.2rem 1fr;
+  counter-increment: download-step;
+}
+
+.download-instructions li::before {
+  grid-row: 1 / 3;
+  color: var(--color-primary);
+  font-family: var(--font-mono);
+  content: "0" counter(download-step);
+}
+
+.download-instructions li span {
+  color: var(--color-text-muted);
+}
+
+.release-channel-note {
+  display: grid;
+  grid-template-columns: minmax(16rem, 0.8fr) minmax(0, 1fr);
+  gap: clamp(2rem, 7vw, 6rem);
+  align-items: end;
+}
+
+.release-channel-note h2,
+.release-channel-note p {
+  margin-bottom: 0;
+}
+
+.docs-next {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 4rem;
+}
+
+.docs-next a {
+  display: grid;
+  padding: 1.2rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+}
+
+.docs-next a:last-child {
+  text-align: right;
+}
+
+.docs-next span {
+  color: var(--color-text-muted);
+  font-size: 0.72rem;
+}
+
+.docs-next strong {
+  color: var(--color-primary);
+}
+
+@media (max-width: 760px) {
+  .download-page-layout,
+  .release-channel-note {
+    grid-template-columns: 1fr;
+  }
+
+  .docs-layout {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .docs-sidebar {
+    position: static;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .docs-sidebar nav {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .docs-next {
+    grid-template-columns: 1fr;
+  }
+
+  .docs-next a:last-child {
+    text-align: left;
+  }
+}

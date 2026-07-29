@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Release notes for Star-Launcher 3.0 Stable.">
+    <meta name="theme-color" content="#080d18">
+    <title>3.0 Stable Release Notes — Star-Launcher</title>
+    <link rel="icon" href="../favicon.ico" sizes="any">
+    <link rel="icon" href="../assets/branding/star-launcher-app-icon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../css/tokens.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <script src="../js/theme.js"></script>
+    <script src="../js/site-config.js" defer></script>
+    <script src="../js/navigation.js" defer></script>
+    <script src="../js/site.js" defer></script>
+    <script src="../js/monetization.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header is-scrolled" data-site-header>
+      <div class="container header-inner">
+        <a class="brand" href="../index.html" aria-label="Star-Launcher home">
+          <span class="brand-logo" aria-hidden="true">
+            <img class="brand-image brand-image-dark" src="../assets/branding/star-launcher-horizontal-dark.svg" alt="">
+            <img class="brand-image brand-image-light" src="../assets/branding/star-launcher-horizontal-light.svg" alt="">
+          </span>
+        </a>
+        <button class="menu-toggle button button-icon" type="button" aria-expanded="false" aria-controls="site-navigation" data-menu-toggle><span class="menu-icon" aria-hidden="true"></span><span class="sr-only">Open navigation</span></button>
+        <nav class="site-navigation" id="site-navigation" aria-label="Main navigation" data-navigation>
+          <a href="../index.html#features">Features</a><a href="../index.html#download">Download</a><a href="installation.html">Guides &amp; Help</a><a href="../index.html#community">Community</a>
+        </nav>
+        <button class="theme-toggle button button-icon" type="button" aria-label="Switch to light theme" data-theme-toggle><span class="theme-icon theme-icon-dark" aria-hidden="true">☾</span><span class="theme-icon theme-icon-light" aria-hidden="true">☀</span></button>
+      </div>
+    </header>
+    <main id="main-content">
+      <section class="docs-hero">
+        <div class="container docs-hero-inner">
+          <p class="eyebrow">Release notes / July 28, 2026</p>
+          <h1>Star-Launcher 3.0 Stable</h1>
+          <p>A major usability and reliability update to the portable Star Citizen pre-flight launcher.</p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container docs-layout">
+          <aside class="docs-sidebar">
+            <strong>Guides &amp; Help</strong>
+            <nav aria-label="Guides and help">
+              <a href="installation.html">Installation</a>
+              <a href="setup.html">Setup guide</a>
+              <a href="faq.html">FAQ</a>
+              <a href="troubleshooting.html">Troubleshooting</a>
+              <a href="release-notes.html" aria-current="page">Release notes</a>
+            </nav>
+          </aside>
+          <article class="docs-content">
+            <section id="version-3-0-0">
+              <h2>Version 3.0 Stable</h2>
+              <p><strong>Released July 28, 2026</strong></p>
+              <h3>Highlights</h3>
+              <ul>
+                <li>Completed the Star-Launcher naming and branding transition, including automatic migration of existing profiles and preferences.</li>
+                <li>Added versioned controller-preset import and export with validation and safe duplicate-name handling.</li>
+                <li>Expanded keybind references to support images, PDFs, web addresses, and Windows internet shortcuts.</li>
+                <li>Added movable, resizable placement templates for keybind, reference, and website windows.</li>
+                <li>Added a dedicated launch-progress window with Stop, persistent results, acknowledgement, and conservative safe retry.</li>
+                <li>Added optional automatic profile launch with a visible Cancel countdown and controller-preset override.</li>
+                <li>Added a consent-driven portable self-updater with stable-feed validation, download progress, checksum verification, safe replacement, and rollback.</li>
+                <li>Improved RSI Launcher recovery from visible, minimized, and tray-hidden states.</li>
+                <li>Improved recognition of a newly started Star Citizen process when RSI Launcher remains open.</li>
+                <li>Improved the optional vJoy preparation workflow so its configuration window opens, restores, or receives focus consistently.</li>
+                <li>Improved settings organization, larger text, keyboard focus, screen-reader naming, status announcements, and Windows high-contrast support.</li>
+                <li>Introduced the approved navigation-star identity, Deep-Space Indigo themes, and coordinated application and website branding.</li>
+              </ul>
+              <h3>Download package</h3>
+              <p>Star-Launcher 3.0 Stable is distributed as <strong>Star-Launcher-3.0.0.zip</strong>, a verified portable package containing the executable, README, release manifest, and executable checksum.</p>
+              <p>A matching SHA-256 file is published with the download so the archive can be verified.</p>
+              <h3>Requirements</h3>
+              <ul>
+                <li>Windows 10 or Windows 11, x64</li>
+                <li>Any optional third-party tools selected by the user</li>
+              </ul>
+              <p>No installer, background service, or bundled third-party software is included. Existing data under <strong>%APPDATA%\Star-Launcher</strong> is preserved.</p>
+              <h3>Update support</h3>
+              <p>Star-Launcher 3.0 Stable includes the portable self-updater. It checks the official stable release feed and can apply supported updates while preserving the application location, profiles, and preferences. Updates require user consent and checksum verification; manual ZIP updates remain available.</p>
+            </section>
+            <nav class="docs-next" aria-label="Release navigation">
+              <a href="download.html"><span>Return to</span><strong>← Download</strong></a>
+              <a href="installation.html"><span>Next step</span><strong>Installation →</strong></a>
+            </nav>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"><div class="container footer-legal"><p>Star-Launcher is an independent community project and is not affiliated with, endorsed by, or sponsored by Cloud Imperium Games or Roberts Space Industries.</p><p>© <span data-current-year></span> Star-Launcher</p></div></footer>
+  </body>
+</html>
