@@ -21,6 +21,41 @@
   transform: translateY(-1px);
 }
 
+.button-brand-icon {
+  display: inline-block;
+  width: 1.15rem;
+  height: 1.15rem;
+  min-width: 1.15rem;
+  flex: 0 0 auto;
+  background: currentColor;
+  -webkit-mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+}
+
+.button-brand-icon-discord {
+  -webkit-mask-image: url("../assets/icons/discord.svg");
+  mask-image: url("../assets/icons/discord.svg");
+}
+
+.button-brand-icon-paypal {
+  -webkit-mask-image: url("../assets/icons/paypal.svg");
+  mask-image: url("../assets/icons/paypal.svg");
+}
+
+.button-brand-icon-kofi {
+  -webkit-mask-image: url("../assets/icons/kofi.svg");
+  mask-image: url("../assets/icons/kofi.svg");
+}
+
+.button-email-icon {
+  font-size: 1.15rem;
+  line-height: 1;
+}
+
 .button-primary {
   background: var(--color-primary);
   color: var(--color-primary-contrast);
@@ -480,8 +515,7 @@
 }
 
 .support-actions .button {
-  display: grid;
-  gap: 0.05rem;
+  display: inline-flex;
 }
 
 .support-actions small {

@@ -53,8 +53,8 @@ primary color with violet and restrained warm accents across dark and light
 themes.
 
 Approved logo assets are stored in `assets/branding` and switch automatically
-between dark- and light-theme variants. The homepage also reserves coming-soon
-PayPal and Ko-fi support actions without linking to unconfigured accounts.
+between dark- and light-theme variants. The homepage includes direct community
+Discord, PayPal, and Ko-fi support links.
 
 See [`docs/monetization.md`](docs/monetization.md) for the affiliate disclosure,
 product catalog, sponsor placement, and activation requirements.
