@@ -1,7 +1,7 @@
 # star-launcher-website
 
 Official website for Star-Launcher, an independent community-developed Windows
-launcher and startup utility designed to simplify the Star Citizen setup
+launcher and startup utility designed to simplify the sim setup
 workflow.
 
 Star-Launcher is proprietary freeware. Its application source code is private
@@ -51,6 +51,11 @@ content.
 The approved visual palette is **Deep-Space Indigo**, pairing an indigo-blue
 primary color with violet and restrained warm accents across dark and light
 themes.
+
+The public affiliation disclaimer currently identifies Cloud Imperium Games
+and Roberts Space Industries because Star Citizen is a supported title. Add the
+appropriate developer, publisher, and trademark references as native support
+for additional titles is introduced.
 
 Approved logo assets are stored in `assets/branding` and switch automatically
 between dark- and light-theme variants. The homepage includes direct community
