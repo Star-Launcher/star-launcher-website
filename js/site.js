@@ -6,9 +6,9 @@
   var copyEmailButton = document.querySelector("[data-copy-email]");
   var copyStatus = document.querySelector("[data-copy-status]");
   var lightbox = document.querySelector("[data-screenshot-lightbox]");
-  var lightboxImage = document.querySelector("[data-lightbox-preview]");
-  var lightboxTitle = document.querySelector("[data-lightbox-title]");
-  var lightboxClose = document.querySelector("[data-lightbox-close]");
+  var lightboxImage = lightbox ? lightbox.querySelector("[data-lightbox-preview]") : null;
+  var lightboxTitle = lightbox ? lightbox.querySelector("[data-lightbox-title]") : null;
+  var lightboxClose = lightbox ? lightbox.querySelector("[data-lightbox-close]") : null;
   var screenshotLinks = document.querySelectorAll("[data-lightbox-image]");
 
   if (year) {
@@ -54,7 +54,7 @@
       link.addEventListener("click", function (event) {
         var thumbnail = link.querySelector("img");
         var caption = link.querySelector(".screenshot-caption strong");
-        var linkTitle = link.getAttribute("data-lightbox-title");
+        var linkTitle = link.getAttribute("data-lightbox-label");
 
         event.preventDefault();
         lightboxImage.src = link.href;
