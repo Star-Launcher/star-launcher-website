@@ -150,9 +150,22 @@
 }
 
 .download-verification {
-  margin-bottom: 0;
+  margin-top: 1rem;
   color: var(--color-text-muted);
   font-size: 0.72rem;
+}
+
+.download-verification summary {
+  width: fit-content;
+  cursor: pointer;
+  color: var(--color-primary);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.download-verification p {
+  margin: 0.75rem 0 0;
 }
 
 .download-verification code {
