@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Use Star-Launcher controller presets to prepare vJoy, HidHide, and Joystick Gremlin before starting your simulator.">
+    <meta name="theme-color" content="#080d18">
+    <title>Star-Launcher Controller Setup — vJoy, HidHide &amp; Joystick Gremlin</title>
+    <link rel="canonical" href="https://star-launcher.com/pages/controller-setup.html">
+    <link rel="icon" href="../favicon.ico" sizes="any">
+    <link rel="icon" href="../assets/branding/star-launcher-app-icon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../css/tokens.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <script src="../js/theme.js"></script>
+    <script src="../js/site-config.js" defer></script>
+    <script src="../js/navigation.js" defer></script>
+    <script src="../js/site.js" defer></script>
+    <script src="../js/monetization.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header is-scrolled" data-site-header>
+      <div class="container header-inner">
+        <a class="brand" href="../index.html" aria-label="Star-Launcher home"><span class="brand-logo" aria-hidden="true"><img class="brand-image brand-image-dark" src="../assets/branding/star-launcher-horizontal-dark.svg" alt=""><img class="brand-image brand-image-light" src="../assets/branding/star-launcher-horizontal-light.svg" alt=""></span></a>
+        <button class="menu-toggle button button-icon" type="button" aria-expanded="false" aria-controls="site-navigation" data-menu-toggle><span class="menu-icon" aria-hidden="true"></span><span class="sr-only">Open navigation</span></button>
+        <nav class="site-navigation" id="site-navigation" aria-label="Main navigation" data-navigation><a href="../index.html#features">Features</a><a href="../index.html#download">Download</a><a href="installation.html">Guides &amp; Help</a><a href="../index.html#community">Community</a></nav>
+        <button class="theme-toggle button button-icon" type="button" aria-label="Switch to light theme" data-theme-toggle><span class="theme-icon theme-icon-dark" aria-hidden="true">☾</span><span class="theme-icon theme-icon-light" aria-hidden="true">☀</span></button>
+      </div>
+    </header>
+    <main id="main-content">
+      <section class="docs-hero">
+        <div class="container docs-hero-inner"><p class="eyebrow">Guides &amp; Help / Controller setup</p><h1>Prepare vJoy, HidHide, and Joystick Gremlin</h1><p>Capture a known-good controller configuration once, then let Star-Launcher prepare the tools you use before a simulator starts.</p></div>
+      </section>
+      <section class="section">
+        <div class="container docs-layout">
+          <aside class="docs-sidebar"><strong>Guides &amp; Help</strong><nav aria-label="Guides and help"><a href="installation.html">Installation</a><a href="setup.html">Setup guide</a><a href="controller-setup.html" aria-current="page">Controller setup</a><a href="faq.html">FAQ</a><a href="troubleshooting.html">Troubleshooting</a><a href="release-notes.html">Release notes</a></nav></aside>
+          <article class="docs-content">
+            <section>
+              <h2>What Star-Launcher prepares</h2>
+              <p>vJoy, HidHide, and Joystick Gremlin are independently optional. A controller preset can use one, two, or all three tools. During preparation, Star-Launcher validates the enabled tools and handles them in this order: <strong>vJoy</strong>, <strong>HidHide</strong>, then <strong>Joystick Gremlin</strong>.</p>
+              <div class="notice"><strong>Configure each third-party tool first.</strong><p>Star-Launcher does not install or replace vJoy, HidHide, or Joystick Gremlin. Set them up normally and confirm that your controllers work before capturing that configuration in Star-Launcher.</p></div>
+            </section>
+            <section>
+              <h2>1. Start from a working configuration</h2>
+              <ul>
+                <li>Configure the vJoy devices your simulator setup requires.</li>
+                <li>Configure HidHide cloaking, hidden physical controllers, and allowed applications.</li>
+                <li>Create and test the Joystick Gremlin XML profile you want to use.</li>
+              </ul>
+              <p>Test the complete controller setup outside Star-Launcher first. Capturing a known-good state makes later preparation predictable.</p>
+            </section>
+            <section>
+              <h2>2. Create a controller preset</h2>
+              <ol>
+                <li>Open <strong>Settings</strong>, then select <strong>Controller presets</strong>.</li>
+                <li>Select <strong>New</strong> and give the preset a recognizable name.</li>
+                <li>Under <strong>Tools used by this preset</strong>, enable only the tools that belong to this setup.</li>
+                <li>Confirm the shared executable paths for the enabled tools.</li>
+              </ol>
+              <p>Shared tool paths are saved across Star-Launcher. Machine-specific paths are not included when a controller preset is exported.</p>
+            </section>
+            <section>
+              <h2>3. Capture vJoy and HidHide</h2>
+              <p>Open vJoy and HidHide and place both in the exact state you normally use. Then use <strong>Capture vJoy</strong>, <strong>Capture HidHide</strong>, or <strong>Capture vJoy + HidHide</strong> in the preset editor.</p>
+              <ul>
+                <li>Only capture tools enabled for the selected preset.</li>
+                <li>Close the HidHide window before capture for the quickest result.</li>
+                <li>Review the captured summary before saving.</li>
+              </ul>
+            </section>
+            <section>
+              <h2>4. Select the Joystick Gremlin profile</h2>
+              <p>If Joystick Gremlin is enabled, browse to the XML profile you already tested. Choose whether Star-Launcher should show the tool during preparation and whether Joystick Gremlin should be minimized after its profile is activated.</p>
+              <p>Select <strong>Save controller preset</strong> when the preset is complete.</p>
+            </section>
+            <section>
+              <h2>5. Use the preset from the main page</h2>
+              <ol>
+                <li>Return to the Star-Launcher main page.</li>
+                <li>Select the controller preset below <strong>Controller preparation</strong>.</li>
+                <li>Keep <strong>Included in launch</strong> selected if preparation should run with the full launch.</li>
+                <li>Select <strong>Prepare controllers now</strong> to test the preset by itself.</li>
+              </ol>
+              <p>Run <strong>Pre-flight checks</strong> before a full launch to catch missing paths, missing captures, or an unavailable Joystick Gremlin profile.</p>
+            </section>
+            <section>
+              <h2>Common controller-preparation issues</h2>
+              <ul>
+                <li><strong>A tool cannot be found:</strong> confirm its shared executable path in the controller preset.</li>
+                <li><strong>vJoy or HidHide has no captured configuration:</strong> reopen the tool, verify its state, and capture it again.</li>
+                <li><strong>Joystick Gremlin sees only virtual devices:</strong> confirm the selected XML profile, physical-controller connections, and the HidHide applications allowed to see those controllers.</li>
+                <li><strong>Windows requests administrator approval:</strong> approve the UAC prompt when an enabled controller tool needs elevated access. Star-Launcher cannot bypass it.</li>
+                <li><strong>Joystick Gremlin is already open:</strong> close it completely if Star-Launcher asks, then run preparation again.</li>
+              </ul>
+              <p>For additional help, see <a href="troubleshooting.html">Troubleshooting</a> or contact the Star-Launcher community through the links on the homepage.</p>
+            </section>
+            <nav class="docs-next" aria-label="Guide pagination"><a href="setup.html"><span>Previous guide</span><strong>← Setup</strong></a><a href="faq.html"><span>Next guide</span><strong>FAQ →</strong></a></nav>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"><div class="container footer-legal"><p>Star-Launcher is an independent community project and is not affiliated with, endorsed by, or sponsored by Cloud Imperium Games or Roberts Space Industries.</p><p>© <span data-current-year></span> Star-Launcher</p></div></footer>
+  </body>
+</html>
