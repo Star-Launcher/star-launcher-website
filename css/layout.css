@@ -106,6 +106,7 @@
 }
 
 .preview-frame {
+  display: block;
   position: relative;
   z-index: 2;
   overflow: hidden;
@@ -114,6 +115,14 @@
   background: var(--color-surface);
   box-shadow: var(--shadow-card);
   transform: perspective(1200px) rotateY(-4deg) rotateX(2deg);
+}
+
+.hero-preview-link {
+  cursor: zoom-in;
+}
+
+.hero-preview-link:hover {
+  border-color: var(--color-primary);
 }
 
 .hero-screenshot {

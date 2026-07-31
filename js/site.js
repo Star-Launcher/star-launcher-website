@@ -54,11 +54,12 @@
       link.addEventListener("click", function (event) {
         var thumbnail = link.querySelector("img");
         var caption = link.querySelector(".screenshot-caption strong");
+        var linkTitle = link.getAttribute("data-lightbox-title");
 
         event.preventDefault();
         lightboxImage.src = link.href;
         lightboxImage.alt = thumbnail ? thumbnail.alt : "Star-Launcher screenshot";
-        lightboxTitle.textContent = caption ? caption.textContent : "Star-Launcher screenshot";
+        lightboxTitle.textContent = linkTitle || (caption ? caption.textContent : "Star-Launcher screenshot");
         lightbox.showModal();
       });
     });
