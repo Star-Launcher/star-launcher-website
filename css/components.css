@@ -66,6 +66,19 @@
   background: var(--color-primary-hover);
 }
 
+.download-host-button {
+  min-height: 3.75rem;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.download-host-button small {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  font-weight: 600;
+  opacity: 0.78;
+}
+
 .button-secondary {
   border-color: var(--color-border);
   background: var(--color-surface);

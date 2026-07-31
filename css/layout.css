@@ -531,28 +531,9 @@
   border-left: 1px solid var(--color-border);
 }
 
-.download-source-actions {
-  display: grid;
-  width: 100%;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.75rem;
-  margin-bottom: 0.85rem;
-}
-
-.download-source-actions .button {
-  width: 100%;
-  justify-content: center;
-  text-align: center;
-}
-
 .download-action p {
   margin: 0.75rem 0 0;
   font-size: 0.75rem;
-}
-
-.download-action .download-browser-note {
-  max-width: 34rem;
-  color: var(--color-text-muted);
 }
 
 .docs-grid {
@@ -729,10 +710,6 @@
     padding: 2rem 0 0;
     border-top: 1px solid var(--color-border);
     border-left: 0;
-  }
-
-  .download-source-actions {
-    grid-template-columns: 1fr;
   }
 
   .community-actions {
