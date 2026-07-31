@@ -139,6 +139,16 @@
   margin-block: 1.75rem 1.25rem;
 }
 
+.download-page-actions .button {
+  flex: 1 1 15rem;
+  justify-content: center;
+  text-align: center;
+}
+
+.download-browser-notice {
+  margin-block: 0 1.25rem;
+}
+
 .download-verification {
   margin-bottom: 0;
   color: var(--color-text-muted);
