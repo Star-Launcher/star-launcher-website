@@ -365,6 +365,7 @@
   padding: 0;
   justify-content: stretch;
   background: var(--color-surface);
+  cursor: zoom-in;
 }
 
 .screenshot-real > img {
@@ -396,6 +397,85 @@
 
 .screenshot-caption small {
   margin-top: 0.2rem;
+}
+
+.screenshot-lightbox {
+  width: min(96vw, 110rem);
+  max-width: none;
+  height: min(94vh, 70rem);
+  max-height: none;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid var(--color-primary);
+  border-radius: var(--radius-md);
+  background: var(--color-background);
+  color: var(--color-text);
+  box-shadow: var(--shadow-card);
+}
+
+.screenshot-lightbox::backdrop {
+  background: var(--color-mask);
+  backdrop-filter: blur(8px);
+}
+
+.screenshot-lightbox-panel {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  height: 100%;
+}
+
+.screenshot-lightbox-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.8rem 1rem;
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+
+.screenshot-lightbox-header h2 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.screenshot-lightbox-close {
+  display: inline-grid;
+  width: 2.5rem;
+  height: 2.5rem;
+  place-items: center;
+  padding: 0;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface-strong);
+  color: var(--color-text);
+  font: inherit;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.screenshot-lightbox-close:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary-hover);
+}
+
+.screenshot-lightbox-stage {
+  display: grid;
+  min-height: 0;
+  place-items: center;
+  overflow: auto;
+  padding: 1rem;
+  background: var(--color-background-raised);
+}
+
+.screenshot-lightbox-stage img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
 }
 
 .download-panel {

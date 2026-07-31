@@ -192,23 +192,23 @@
             <p class="eyebrow">Product tour</p>
           </div>
           <div class="screenshot-grid">
-            <a class="screenshot-placeholder screenshot-real screenshot-main" href="assets/screenshots/star-launcher-main.png" target="_blank" rel="noopener">
+            <a class="screenshot-placeholder screenshot-real screenshot-main" href="assets/screenshots/star-launcher-main.png" data-lightbox-image>
               <img src="assets/screenshots/star-launcher-main.png" alt="Full Star-Launcher main window" loading="lazy">
               <span class="screenshot-caption"><strong>Main launcher</strong><small>View full screenshot</small></span>
             </a>
-            <a class="screenshot-placeholder screenshot-real" href="assets/screenshots/settings-setup.png" target="_blank" rel="noopener">
+            <a class="screenshot-placeholder screenshot-real" href="assets/screenshots/settings-setup.png" data-lightbox-image>
               <img src="assets/screenshots/settings-setup.png" alt="Star-Launcher Setup settings tab" loading="lazy">
               <span class="screenshot-caption"><strong>Setup</strong><small>View full screenshot</small></span>
             </a>
-            <a class="screenshot-placeholder screenshot-real" href="assets/screenshots/settings-controller-presets.png" target="_blank" rel="noopener">
+            <a class="screenshot-placeholder screenshot-real" href="assets/screenshots/settings-controller-presets.png" data-lightbox-image>
               <img src="assets/screenshots/settings-controller-presets.png" alt="Star-Launcher Controller presets settings tab" loading="lazy">
               <span class="screenshot-caption"><strong>Controller presets</strong><small>View full screenshot</small></span>
             </a>
-            <a class="screenshot-placeholder screenshot-real" href="assets/screenshots/settings-launch-options.png" target="_blank" rel="noopener">
+            <a class="screenshot-placeholder screenshot-real" href="assets/screenshots/settings-launch-options.png" data-lightbox-image>
               <img src="assets/screenshots/settings-launch-options.png" alt="Star-Launcher Launch options settings tab" loading="lazy">
               <span class="screenshot-caption"><strong>Launch options</strong><small>View full screenshot</small></span>
             </a>
-            <a class="screenshot-placeholder screenshot-real" href="assets/screenshots/settings-preferences.png" target="_blank" rel="noopener">
+            <a class="screenshot-placeholder screenshot-real" href="assets/screenshots/settings-preferences.png" data-lightbox-image>
               <img src="assets/screenshots/settings-preferences.png" alt="Star-Launcher Preferences settings tab" loading="lazy">
               <span class="screenshot-caption"><strong>Preferences</strong><small>View full screenshot</small></span>
             </a>
@@ -318,6 +318,18 @@
         </div>
       </section>
     </main>
+
+    <dialog class="screenshot-lightbox" data-screenshot-lightbox aria-labelledby="screenshot-lightbox-title">
+      <div class="screenshot-lightbox-panel">
+        <div class="screenshot-lightbox-header">
+          <h2 id="screenshot-lightbox-title" data-lightbox-title>Star-Launcher screenshot</h2>
+          <button class="screenshot-lightbox-close" type="button" aria-label="Close screenshot" data-lightbox-close>×</button>
+        </div>
+        <div class="screenshot-lightbox-stage">
+          <img src="" alt="" data-lightbox-preview>
+        </div>
+      </div>
+    </dialog>
 
     <footer class="site-footer">
       <div class="container footer-main">
