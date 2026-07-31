@@ -202,18 +202,6 @@
   color: var(--color-text-muted);
 }
 
-.release-channel-note {
-  display: grid;
-  grid-template-columns: minmax(16rem, 0.8fr) minmax(0, 1fr);
-  gap: clamp(2rem, 7vw, 6rem);
-  align-items: end;
-}
-
-.release-channel-note h2,
-.release-channel-note p {
-  margin-bottom: 0;
-}
-
 .docs-next {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -243,8 +231,7 @@
 }
 
 @media (max-width: 760px) {
-  .download-page-layout,
-  .release-channel-note {
+  .download-page-layout {
     grid-template-columns: 1fr;
   }
 
