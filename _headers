@@ -1,0 +1,17 @@
+/releases/latest.json
+  Cache-Control: public, max-age=0, must-revalidate
+  X-Content-Type-Options: nosniff
+
+/releases/stable/*
+  Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
+
+/downloads/*
+  Cache-Control: public, max-age=31536000, immutable
+  X-Content-Type-Options: nosniff
+
+https://star-launcher-website.pages.dev/*
+  X-Robots-Tag: noindex
+
+https://:version.star-launcher-website.pages.dev/*
+  X-Robots-Tag: noindex
