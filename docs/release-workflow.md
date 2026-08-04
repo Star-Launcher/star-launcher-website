@@ -11,7 +11,7 @@ release metadata consumed by Star-Launcher.
 - Versioned download:
   `https://star-launcher.com/downloads/Star-Launcher-{version}.zip`
 - Release notes:
-  `https://star-launcher.com/pages/release-notes.html`
+  `https://star-launcher.com/pages/release-notes`
 
 `latest.json` always describes the newest stable release. A historical copy of
 the same metadata is retained under `releases/stable/`.
@@ -52,8 +52,9 @@ file size, or a mismatched checksum.
 
 Publish the versioned files before updating `latest.json`. This prevents the
 application from discovering an update whose download is not available yet.
-Vercel is configured to revalidate `latest.json` on every request while caching
-versioned metadata and downloads as immutable files.
+Cloudflare Pages is configured through `_headers` to revalidate `latest.json`
+on every request while caching versioned metadata and downloads as immutable
+files.
 
 ## Future beta channel
 

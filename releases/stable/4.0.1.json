@@ -5,7 +5,7 @@
   "channel": "stable",
   "releaseDate": "2026-07-30",
   "downloadUrl": "https://star-launcher.com/downloads/Star-Launcher-4.0.1.zip",
-  "releaseNotesUrl": "https://star-launcher.com/pages/release-notes.html#version-4-0-1",
+  "releaseNotesUrl": "https://star-launcher.com/pages/release-notes#version-4-0-1",
   "checksumSha256": "def27776389c27b85ca4c072ff022ec81eaf98709b7aa3f38d0998aff6468c93",
   "fileSizeBytes": 314767,
   "minimumVersion": "3.0.0"
