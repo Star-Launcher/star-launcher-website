@@ -36,10 +36,15 @@ no API, database, account, or server-side application.
 See [`docs/release-workflow.md`](docs/release-workflow.md) for the publishing
 sequence and updater contract.
 
-## Project status
+## Current release
 
-The website is being developed incrementally as a lightweight static site using
-HTML, CSS, and JavaScript.
+The site publishes Star-Launcher 5.0 Stable, which introduces native, automatically
+saved game configurations for supported space and flight simulators. The 5.0
+experience uses game artwork tiles on Main; separate Launch Methods, Game-Specific
+Apps, and Keybind Viewers; universal Utility Apps and Preferences; and independent
+controller presets.
+
+The website is a lightweight static site built with HTML, CSS, and JavaScript.
 
 Future affiliate and sponsor capabilities are controlled by
 `js/site-config.js` and remain disabled by default. Page-specific sponsor slots,
@@ -52,10 +57,10 @@ The approved visual palette is **Deep-Space Indigo**, pairing an indigo-blue
 primary color with violet and restrained warm accents across dark and light
 themes.
 
-The public affiliation disclaimer currently identifies Cloud Imperium Games
-and Roberts Space Industries because Star Citizen is a supported title. Add the
-appropriate developer, publisher, and trademark references as native support
-for additional titles is introduced.
+The public affiliation disclaimer identifies Star-Launcher as an independent
+community project that is not affiliated with or endorsed by the developers,
+publishers, platform owners, or trademark holders of its supported games and
+third-party tools.
 
 Approved logo assets are stored in `assets/branding` and switch automatically
 between dark- and light-theme variants. The homepage includes direct community
