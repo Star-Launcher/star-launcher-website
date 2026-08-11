@@ -38,11 +38,12 @@ sequence and updater contract.
 
 ## Current release
 
-The site publishes Star-Launcher 5.0 Stable, which introduces native, automatically
+The site publishes Star-Launcher 5.0.1 Stable, which includes the native, automatically
 saved game configurations for supported space and flight simulators. The 5.0
 experience uses game artwork tiles on Main; separate Launch Methods, Game-Specific
 Apps, and Keybind Viewers; universal Utility Apps and Preferences; and independent
-controller presets.
+controller presets. Version 5.0.1 places the three Game Launch add controls beside
+their section titles to reduce vertical space.
 
 The website is a lightweight static site built with HTML, CSS, and JavaScript.
 
