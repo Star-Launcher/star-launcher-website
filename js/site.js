@@ -85,7 +85,11 @@
   }
 
   function updateHeader() {
-    header.classList.toggle("is-scrolled", window.scrollY > 16);
+    if (header.classList.contains("home-header")) {
+      header.classList.toggle("is-scrolled", window.scrollY > 16);
+    } else {
+      header.classList.add("is-scrolled");
+    }
   }
 
   updateHeader();

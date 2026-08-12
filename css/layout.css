@@ -33,6 +33,10 @@
   overflow: hidden;
 }
 
+.has-release-notice .hero {
+  padding-top: 9.45rem;
+}
+
 .hero::after {
   position: absolute;
   inset: 0;
@@ -605,6 +609,14 @@
   font-size: 0.82rem;
 }
 
+.footer-directory > div {
+  min-width: 13rem;
+}
+
+.footer-directory > div > strong {
+  color: var(--color-text);
+}
+
 .footer-legal {
   display: flex;
   justify-content: space-between;
@@ -657,6 +669,14 @@
     padding: 0.75rem;
   }
 
+  .site-navigation a[aria-current="page"]::after {
+    display: none;
+  }
+
+  .release-notice-inner {
+    justify-content: space-between;
+  }
+
   .hero-grid,
   .section-heading-split,
   .download-panel,
@@ -666,6 +686,10 @@
 
   .hero {
     padding-top: 6.25rem;
+  }
+
+  .has-release-notice .hero {
+    padding-top: 8.9rem;
   }
 
   .product-preview {

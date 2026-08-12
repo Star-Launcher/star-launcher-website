@@ -6,6 +6,40 @@
     var(--color-background-raised);
 }
 
+.has-release-notice .docs-hero {
+  padding-top: 12.65rem;
+}
+
+.breadcrumbs {
+  margin-bottom: 1.5rem;
+}
+
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  padding: 0;
+  margin: 0;
+  color: var(--color-text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  list-style: none;
+}
+
+.breadcrumbs li:not(:last-child)::after {
+  margin-left: 0.45rem;
+  color: var(--color-border-strong);
+  content: "/";
+}
+
+.breadcrumbs a {
+  color: var(--color-text-muted);
+}
+
+.breadcrumbs a:hover {
+  color: var(--color-primary);
+}
+
 .docs-hero-inner {
   max-width: 54rem;
 }
@@ -46,6 +80,20 @@
 .docs-sidebar nav {
   display: grid;
   gap: 0.35rem;
+}
+
+.sidebar-group-label {
+  padding: 0.9rem 0.75rem 0.1rem;
+  color: var(--color-primary);
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.sidebar-group-label:first-child {
+  padding-top: 0.1rem;
 }
 
 .docs-sidebar a {
@@ -116,6 +164,10 @@
   grid-template-columns: minmax(0, 1.1fr) minmax(20rem, 0.9fr);
   gap: clamp(2rem, 5vw, 4rem);
   align-items: start;
+}
+
+.download-with-sidebar {
+  grid-template-columns: 14rem minmax(0, 1fr);
 }
 
 .download-release-card,
