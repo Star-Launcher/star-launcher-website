@@ -43,7 +43,7 @@
     <link rel="stylesheet" href="css/tokens.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/components.css?v=2">
-    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/layout.css?v=3">
     <script src="js/theme.js"></script>
     <script src="js/site-config.js" defer></script>
     <script src="js/navigation.js?v=20260812-2" defer></script>
@@ -72,7 +72,6 @@
         </button>
 
         <nav class="site-navigation" id="site-navigation" aria-label="Main navigation" data-navigation>
-          <a href="#features">Features</a>
           <a href="#how-it-works">How it works</a>
           <a href="#screenshots">Screenshots</a>
           <a href="#download">Download</a>
@@ -118,48 +117,51 @@
         </div>
       </section>
 
-      <section class="trust-strip" aria-label="Star-Launcher principles">
-        <div class="container trust-grid">
-          <p><strong>Fast</strong><span>Minimal overhead</span></p>
-          <p><strong>Focused</strong><span>Purpose-built workflow</span></p>
-          <p><strong>Flexible</strong><span>Tools that work your way</span></p>
-          <p><strong>Independent</strong><span>Built by the community</span></p>
-        </div>
-      </section>
-
-      <section class="section" id="features">
+      <section class="section section-alt" id="how-it-works">
+        <span class="anchor-alias" id="features" aria-hidden="true"></span>
         <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">Designed around your setup</p>
-            <h2>Less repetition. More time in the game.</h2>
-            <p>Bring the routine parts of your startup process together without adding a heavy platform or complicated account system.</p>
+          <div class="section-heading workflow-heading">
+            <p class="eyebrow">How it works</p>
+            <h2>Set it once. Launch your whole setup.</h2>
+            <p>Star-Launcher remembers what each game needs, then brings your launcher, controller tools, companion apps, and resources together whenever you play.</p>
           </div>
 
-          <div class="feature-grid">
-            <article class="feature-card feature-card-large">
-              <h3>Skip the setup grind every time</h3>
-              <p>Launching can mean reopening several tools, restoring controller settings, and finding the right references every session. Star-Launcher remembers the workflow for each game automatically so you are ready faster—and far less likely to discover your head tracking was forgotten after launch.</p>
-              <div class="workflow-lines" aria-hidden="true">
-                <span></span><span></span><span></span>
-              </div>
-            </article>
-            <article class="feature-card">
-              <h3>Native game presets</h3>
-              <p>Switch between built-in simulator tiles while each game remembers its own launch choices and resources.</p>
-            </article>
-            <article class="feature-card">
-              <h3>Controller support</h3>
-              <p>Make controller-related setup part of the same reliable startup flow.</p>
-            </article>
-            <article class="feature-card">
-              <h3>External tool integration</h3>
-              <p>Coordinate the companion tools your setup depends on from one place.</p>
-            </article>
-            <article class="feature-card feature-card-accent">
-              <h3>Lightweight and portable</h3>
-              <p>Download the verified ZIP, extract it, and run Star-Launcher—no installer or background service required.</p>
-              <span class="portable-badge">No account required</span>
-            </article>
+          <div class="workflow-overview">
+            <ol class="workflow-path">
+              <li>
+                <span class="step-number">01</span>
+                <div>
+                  <h3>Choose your game</h3>
+                  <p>Start with a native preset or add your own. Each game keeps its own launch choices and resources.</p>
+                </div>
+              </li>
+              <li>
+                <span class="step-number">02</span>
+                <div>
+                  <h3>Build your launch</h3>
+                  <p>Select the launcher, controller preset, utility apps, keybind viewers, and web resources you want ready.</p>
+                </div>
+              </li>
+              <li>
+                <span class="step-number">03</span>
+                <div>
+                  <h3>Start everything together</h3>
+                  <p>Star-Launcher prepares your selected tools and starts your launcher or game in one consistent sequence.</p>
+                </div>
+              </li>
+            </ol>
+
+            <aside class="workflow-outcome">
+              <p class="eyebrow">The result</p>
+              <h3>Everything ready before the game starts.</h3>
+              <p>No more launching only to realize your head tracking, controller tools, or a companion app was forgotten.</p>
+              <ul class="capability-list" aria-label="Star-Launcher capabilities">
+                <li>Native game presets</li>
+                <li>Controller preparation</li>
+                <li>Companion apps and resources</li>
+                <li>Portable, with no account required</li>
+              </ul>
+            </aside>
           </div>
         </div>
       </section>
@@ -172,42 +174,6 @@
           </div>
         </div>
       </aside>
-
-      <section class="section section-alt" id="how-it-works">
-        <div class="container">
-          <div class="section-heading section-heading-split">
-            <div>
-              <p class="eyebrow">How it works</p>
-              <h2>Prepare once. Launch your way.</h2>
-            </div>
-            <p>Choose a game, select the launch methods and companion tools that make your setup work, and keep controller presets separate. Star-Launcher saves the game's choices automatically and gets you ready to launch.</p>
-          </div>
-
-          <ol class="steps">
-            <li>
-              <span class="step-number">01</span>
-              <div>
-                <h3>Configure</h3>
-                <p>Choose a native game preset, its launch methods, game-specific apps, keybind viewers, web resources, and controller preset.</p>
-              </div>
-            </li>
-            <li>
-              <span class="step-number">02</span>
-              <div>
-                <h3>Start</h3>
-                <p>Let Star-Launcher prepare the selected controller tools and universal Utility Apps as one consistent sequence.</p>
-              </div>
-            </li>
-            <li>
-              <span class="step-number">03</span>
-              <div>
-                <h3>Launch your way</h3>
-                <p>Let Star-Launcher start your launchers, and even update/launch your games.</p>
-              </div>
-            </li>
-          </ol>
-        </div>
-      </section>
 
       <section class="section" id="screenshots">
         <div class="container">
