@@ -1,0 +1,50 @@
+{
+    "spdxVersion":  "SPDX-2.3",
+    "dataLicense":  "CC0-1.0",
+    "SPDXID":  "SPDXRef-DOCUMENT",
+    "name":  "Star-Launcher-5.0.2",
+    "documentNamespace":  "https://star-launcher.com/sbom/Star-Launcher-5.0.2/86250247312e4418e2abdb989841fddf898ba0f378dfb00408d04c24307a3d2d",
+    "creationInfo":  {
+                         "created":  "2026-08-12T03:58:27.9117117Z",
+                         "creators":  [
+                                          "Tool: Star-Launcher Build-Release.ps1"
+                                      ]
+                     },
+    "documentDescribes":  [
+                              "SPDXRef-Package-StarLauncher"
+                          ],
+    "packages":  [
+                     {
+                         "name":  "Star-Launcher",
+                         "SPDXID":  "SPDXRef-Package-StarLauncher",
+                         "versionInfo":  "5.0.2",
+                         "downloadLocation":  "https://star-launcher.com/downloads/Star-Launcher-5.0.2.zip",
+                         "filesAnalyzed":  false,
+                         "checksums":  [
+                                           {
+                                               "algorithm":  "SHA256",
+                                               "checksumValue":  "795fdeb38530aaa40f1f1597de41c62fa91c0af89d895be066e5bc0ba2297b92"
+                                           }
+                                       ],
+                         "copyrightText":  "Copyright KCJones",
+                         "primaryPackagePurpose":  "APPLICATION"
+                     },
+                     {
+                         "name":  ".NET Framework",
+                         "SPDXID":  "SPDXRef-Package-DotNetFramework48",
+                         "versionInfo":  "4.8",
+                         "supplier":  "Organization: Microsoft Corporation",
+                         "downloadLocation":  "NOASSERTION",
+                         "filesAnalyzed":  false,
+                         "copyrightText":  "Copyright Microsoft Corporation",
+                         "primaryPackagePurpose":  "FRAMEWORK"
+                     }
+                 ],
+    "relationships":  [
+                          {
+                              "spdxElementId":  "SPDXRef-Package-StarLauncher",
+                              "relationshipType":  "DEPENDS_ON",
+                              "relatedSpdxElement":  "SPDXRef-Package-DotNetFramework48"
+                          }
+                      ]
+}

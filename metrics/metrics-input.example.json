@@ -1,0 +1,18 @@
+{
+  "reportingPeriod": "2026-08",
+  "websiteZipRequests": null,
+  "updateFeedRequests": null,
+  "websiteVisits": null,
+  "websitePageViews": null,
+  "paypalDonationCount": null,
+  "paypalGross": null,
+  "paypalFeesAndRefunds": null,
+  "paypalNet": null,
+  "kofiDonationCount": null,
+  "kofiGross": null,
+  "kofiFeesAndRefunds": null,
+  "kofiNet": null,
+  "currency": "USD",
+  "discordExactMembers": null,
+  "notes": "Aggregate values only; never include names, emails, transaction IDs, IP addresses, or usernames."
+}

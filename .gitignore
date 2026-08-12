@@ -1,0 +1,4 @@
+# Local aggregate-metrics inputs and provider exports may contain sensitive data.
+metrics/metrics-input.local.json
+metrics/private/
+metrics/exports/

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Verify an official Star-Launcher Portable ZIP and executable using SHA-256 checksums and expected package contents."><meta name="theme-color" content="#080d18">
+    <title>Verify a Star-Launcher Download</title><link rel="canonical" href="https://star-launcher.com/pages/verify-download"><link rel="icon" href="../favicon.ico" sizes="any"><link rel="icon" href="../assets/branding/star-launcher-app-icon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../css/tokens.css"><link rel="stylesheet" href="../css/base.css"><link rel="stylesheet" href="../css/components.css"><link rel="stylesheet" href="../css/layout.css"><link rel="stylesheet" href="../css/pages.css">
+    <script src="../js/theme.js"></script><script src="../js/site-config.js" defer></script><script src="../js/navigation.js" defer></script><script src="../js/site.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header is-scrolled" data-site-header><div class="container header-inner"><a class="brand" href="../index.html" aria-label="Star-Launcher home"><span class="brand-logo" aria-hidden="true"><img class="brand-image brand-image-dark" src="../assets/branding/star-launcher-horizontal-dark.svg" alt=""><img class="brand-image brand-image-light" src="../assets/branding/star-launcher-horizontal-light.svg" alt=""></span></a><nav class="site-navigation" aria-label="Main navigation"><a href="../index.html#features">Features</a><a href="download.html">Download</a><a href="installation.html">Guides &amp; Help</a><a href="security.html">Security</a></nav><button class="theme-toggle button button-icon" type="button" aria-label="Switch theme" data-theme-toggle><span class="theme-icon theme-icon-dark" aria-hidden="true">&#9790;</span><span class="theme-icon theme-icon-light" aria-hidden="true">&#9728;</span></button></div></header>
+    <main id="main-content">
+      <section class="docs-hero"><div class="container docs-hero-inner"><p class="eyebrow">Release verification</p><h1>Verify your download</h1><p>Confirm that your Portable ZIP is the exact official release before running it.</p></div></section>
+      <section class="section"><div class="container docs-layout"><aside class="docs-sidebar"><strong>Security</strong><nav aria-label="Security pages"><a href="security.html">Security &amp; privacy</a><a href="verify-download.html" aria-current="page">Verify a download</a><a href="download.html">Official download</a><a href="release-notes.html">Release notes</a></nav></aside>
+        <article class="docs-content">
+          <section><h2>Use an official source</h2><p>Download Star-Launcher from <a href="download.html">star-launcher.com</a> or the <a href="https://github.com/Star-Launcher/star-launcher-website/releases" target="_blank" rel="noopener">official Star-Launcher GitHub releases</a>. Do not run repackaged copies, and do not disable Windows security to make an unofficial copy run.</p></section>
+          <section><h2>Verify the Portable ZIP</h2><p>Each GitHub release includes the ZIP and a matching <strong>.zip.sha256</strong> file. In PowerShell, run:</p><pre><code>Get-FileHash .\Star-Launcher-VERSION.zip -Algorithm SHA256</code></pre><p>Compare the displayed hash with the value in the matching checksum file. Every character must match. A mismatch means the file is not the verified release and should not be used.</p></section>
+          <section><h2>Check the extracted package</h2><p>The supported portable package contains exactly these four files:</p><ul><li><strong>Star-Launcher.exe</strong></li><li><strong>README.md</strong></li><li><strong>release-manifest.json</strong></li><li><strong>SHA256SUMS.txt</strong></li></ul><p>Run the same PowerShell command against <strong>Star-Launcher.exe</strong> and compare it with <strong>SHA256SUMS.txt</strong> or the executable entry in <strong>release-manifest.json</strong>.</p></section>
+          <section><h2>What verification proves</h2><p>A matching SHA-256 value proves that your file is byte-for-byte identical to the published artifact. It detects corruption and replacement after publication. It does not prove that software is bug-free or independently reviewed. The Security page records the additional release tests, scan evidence, and current code-signing status.</p></section>
+          <section><h2>In-app updates</h2><p>The updater performs the ZIP size and SHA-256 comparison automatically, checks the expected website and package structure, rejects unsafe archive paths, and preserves user settings. You still choose whether to update and restart.</p></section>
+          <nav class="docs-next" aria-label="Security pagination"><a href="security.html"><span>Previous</span><strong>&larr; Security &amp; privacy</strong></a><a href="download.html"><span>Next</span><strong>Official download &rarr;</strong></a></nav>
+        </article>
+      </div></section>
+    </main>
+    <footer class="site-footer"><div class="container footer-legal"><p>Only trust artifacts whose SHA-256 matches the value published with the official release.</p><p><a href="security.html">Security</a> &middot; &copy; <span data-current-year></span> Star-Launcher</p></div></footer>
+  </body>
+</html>

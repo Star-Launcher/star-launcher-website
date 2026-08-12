@@ -36,13 +36,20 @@ no API, database, account, or server-side application.
 See [`docs/release-workflow.md`](docs/release-workflow.md) for the publishing
 sequence and updater contract.
 
+Project governance working documents:
+
+- [`docs/trust-security-roadmap.md`](docs/trust-security-roadmap.md) — planned
+  public trust, privacy, release-evidence, signing, and security-reporting work
+- [`docs/project-metrics.md`](docs/project-metrics.md) — running aggregate metrics
+  definitions, baselines, and snapshot ledger
+
 ## Current release
 
-The site publishes Star-Launcher 5.0.1 Stable, which includes the native, automatically
+The site publishes Star-Launcher 5.0.2 Stable, which includes the native, automatically
 saved game configurations for supported space and flight simulators. The 5.0
 experience uses game artwork tiles on Main; separate Launch Methods, Game-Specific
 Apps, and Keybind Viewers; universal Utility Apps and Preferences; and independent
-controller presets. Version 5.0.1 places the three Game Launch add controls beside
+controller presets. Version 5.0.1 placed the three Game Launch add controls beside
 their section titles to reduce vertical space.
 
 The website is a lightweight static site built with HTML, CSS, and JavaScript.
