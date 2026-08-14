@@ -1,21 +1,14 @@
-# Star-Launcher 5.1.0 security scan
+# Star-Launcher 5.1.0 Microsoft Defender scan
 
-Scanned: 2026-08-14
-Scanner: Microsoft Defender Antivirus
-Service version: 4.18.26070.9
-Engine version: 1.1.26070.7
-Antivirus/antispyware signatures: 1.457.160.0
+Scanned: 2026-08-14 19:31:20 UTC
 
-## Results
+- Microsoft Defender service: `4.18.26070.9`
+- Microsoft Defender engine: `1.1.26070.7`
+- Antivirus signatures: `1.457.160.0`
+- Portable ZIP result: no threats found
+- Executable result: no threats found
+- Portable ZIP SHA-256: `2cf5b4219666d1395f2172ff0ebb83c646641e22fa7f41b158b6a94eab7d0849`
+- Executable SHA-256: `b02e47bf9f0caa0ef08b7a01d336a6d7356a32ecee78f4bd828b8302df2fbaf2`
+- Portable ZIP bytes: `7954423`
 
-| Artifact | SHA-256 | Result |
-|---|---|---|
-| `Star-Launcher-5.1.0.zip` | `3133e4c238da1f567429cdcd5c425604dcce0f1943d7e8abd9cac9352daf6c54` | No threats found |
-| `Star-Launcher.exe` | `0bf996366e9c196585e7b55f5580d2d392e2165af51b0772903125697be3d1f1` | No threats found |
-
-Both exact release artifacts were scanned with remediation disabled. Both scans
-completed successfully with exit code 0 and reported no threats.
-
-This is one antivirus-engine result tied to the exact published hashes. It is not a
-guarantee that the software is risk-free and is not an independent source-code audit.
-
+Both final release artifacts were scanned directly with Microsoft Defender using custom-file scans with remediation disabled. Both scans returned exit code 0. This evidence is tied to the exact hashes published with the replacement 5.1 stable package.

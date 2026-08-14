@@ -50,8 +50,8 @@ saved game configurations for supported space and flight simulators. The 5.0
 experience uses game artwork tiles on Main; separate Launch Methods, Game-Specific
 Apps, and Keybind Viewers; universal Utility Apps and Preferences; and independent
 controller presets. Version 5.1 adds a continuous nebula image across the Main-page
-cards, higher-contrast labels and checkboxes, and responsive Game-Specific Apps and
-Keybind Viewers columns that stack on narrower windows.
+cards, higher-contrast labels and checkboxes, a larger game-only card title, and
+responsive columns that keep Keybind Viewers left/top of Game-Specific Apps.
 
 The website is a lightweight static site built with HTML, CSS, and JavaScript.
 

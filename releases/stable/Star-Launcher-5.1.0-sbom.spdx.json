@@ -3,9 +3,9 @@
     "dataLicense":  "CC0-1.0",
     "SPDXID":  "SPDXRef-DOCUMENT",
     "name":  "Star-Launcher-5.1.0",
-    "documentNamespace":  "https://star-launcher.com/sbom/Star-Launcher-5.1.0/3133e4c238da1f567429cdcd5c425604dcce0f1943d7e8abd9cac9352daf6c54",
+    "documentNamespace":  "https://star-launcher.com/sbom/Star-Launcher-5.1.0/2cf5b4219666d1395f2172ff0ebb83c646641e22fa7f41b158b6a94eab7d0849",
     "creationInfo":  {
-                         "created":  "2026-08-14T18:50:38.1455764Z",
+                         "created":  "2026-08-14T19:30:12.8902827Z",
                          "creators":  [
                                           "Tool: Star-Launcher Build-Release.ps1"
                                       ]
@@ -23,7 +23,7 @@
                          "checksums":  [
                                            {
                                                "algorithm":  "SHA256",
-                                               "checksumValue":  "0bf996366e9c196585e7b55f5580d2d392e2165af51b0772903125697be3d1f1"
+                                               "checksumValue":  "b02e47bf9f0caa0ef08b7a01d336a6d7356a32ecee78f4bd828b8302df2fbaf2"
                                            }
                                        ],
                          "copyrightText":  "Copyright KCJones",
