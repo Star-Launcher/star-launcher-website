@@ -4,9 +4,9 @@
   window.STAR_LAUNCHER_SITE_CONFIG = Object.freeze({
     releaseNotice: {
       enabled: true,
-      label: "Star-Launcher 5.0.2 security update",
+      label: "Star-Launcher 5.1 visual update",
       linkLabel: "See what changed",
-      path: "pages/release-notes.html#version-5-0-2"
+      path: "pages/release-notes.html#version-5-1-0"
     },
 
     monetizationEnabled: false,

@@ -45,12 +45,13 @@ Project governance working documents:
 
 ## Current release
 
-The site publishes Star-Launcher 5.0.2 Stable, which includes the native, automatically
+The site publishes Star-Launcher 5.1 Stable, which includes the native, automatically
 saved game configurations for supported space and flight simulators. The 5.0
 experience uses game artwork tiles on Main; separate Launch Methods, Game-Specific
 Apps, and Keybind Viewers; universal Utility Apps and Preferences; and independent
-controller presets. Version 5.0.1 placed the three Game Launch add controls beside
-their section titles to reduce vertical space.
+controller presets. Version 5.1 adds a continuous nebula image across the Main-page
+cards, higher-contrast labels and checkboxes, and responsive Game-Specific Apps and
+Keybind Viewers columns that stack on narrower windows.
 
 The website is a lightweight static site built with HTML, CSS, and JavaScript.
 
