@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "version": "5.1.0",
-  "displayVersion": "5.1 Stable",
+  "version": "5.1.1",
+  "displayVersion": "5.1.1 Stable",
   "channel": "stable",
-  "releaseDate": "2026-08-14",
-  "downloadUrl": "https://star-launcher.com/downloads/Star-Launcher-5.1.0.zip",
-  "releaseNotesUrl": "https://star-launcher.com/pages/release-notes#version-5-1-0",
-  "checksumSha256": "2cf5b4219666d1395f2172ff0ebb83c646641e22fa7f41b158b6a94eab7d0849",
-  "fileSizeBytes": 7954423,
+  "releaseDate": "2026-08-15",
+  "downloadUrl": "https://star-launcher.com/downloads/Star-Launcher-5.1.1.zip",
+  "releaseNotesUrl": "https://star-launcher.com/pages/release-notes#version-5-1-1",
+  "checksumSha256": "4beeff7ffe68388657e5a5907e8100d6cf89283afc5b38f9646186f3a3d8e55e",
+  "fileSizeBytes": 7955488,
   "minimumVersion": "3.0.0"
 }

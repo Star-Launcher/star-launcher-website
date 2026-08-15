@@ -50,6 +50,13 @@ file size, or a mismatched checksum.
 8. Update the Download page and homepage version details.
 9. Validate the JSON, download, file size, and checksum before deployment.
 
+## Screenshot standard
+
+- Every homepage and product-tour screenshot must be exactly `1720 × 1392` pixels.
+- Main-page screenshots must show the complete Main page with **Star Citizen** selected.
+- Refresh all affected screenshots for each published app version so their title bars
+  and visible controls match the current release.
+
 Publish the versioned files before updating `latest.json`. This prevents the
 application from discovering an update whose download is not available yet.
 Cloudflare Pages is configured through `_headers` to revalidate `latest.json`

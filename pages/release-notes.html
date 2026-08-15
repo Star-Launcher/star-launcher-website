@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Review Star-Launcher 5.1 responsive visual improvements, native game workflow updates, and earlier release history.">
+    <meta name="description" content="Review Star-Launcher 5.1.1 named keybind charts, controller window behavior, update defaults, and the complete 5.x release history.">
     <meta name="theme-color" content="#080d18">
-    <title>Star-Launcher 5.1 Release Notes &amp; Changelog</title>
+    <title>Star-Launcher 5.1.1 Release Notes &amp; Changelog</title>
     <link rel="canonical" href="https://star-launcher.com/pages/release-notes">
     <link rel="icon" href="../favicon.ico" sizes="any">
     <link rel="icon" href="../assets/branding/star-launcher-app-icon.svg" type="image/svg+xml">
@@ -40,9 +40,9 @@
     <main id="main-content">
       <section class="docs-hero">
         <div class="container docs-hero-inner">
-          <p class="eyebrow">Release notes / August 14, 2026</p>
-          <h1>Star-Launcher 5.1 Stable</h1>
-          <p>A continuous card background, clearer controls, and responsive game-launch groups.</p>
+          <p class="eyebrow">Release notes / August 15, 2026</p>
+          <h1>Star-Launcher 5.1.1 Stable</h1>
+          <p>Named keybind charts, clearer controller window behavior, and verified startup update defaults.</p>
         </div>
       </section>
       <section class="section">
@@ -59,6 +59,17 @@
             </nav>
           </aside>
           <article class="docs-content">
+            <section id="version-5-1-1">
+              <h2>Version 5.1.1 Stable</h2>
+              <p><strong>Released August 15, 2026</strong></p>
+              <ul>
+                <li>Renamed the user-facing keybind workflow to <strong>Keybind Charts</strong> and made the primary chart name editable for aircraft-, module-, or layout-specific identification.</li>
+                <li>Moved <strong>Add keybind chart</strong> beside a clearly separated <strong>Additional Keybind Charts</strong> heading and clarified where extra named charts belong.</li>
+                <li>Added optional controller-preset actions to minimize vJoy and close HidHide after their visible setup steps complete; closing HidHide preserves its applied configuration.</li>
+                <li>Verified that fresh installations enable startup update checks by default while upgrades preserve the user’s existing preference.</li>
+                <li>Added regression coverage for fresh-install defaults and retained the full layout, updater, controller-security, migration, and deletion-safety test suites.</li>
+              </ul>
+            </section>
             <section id="version-5-1-0">
               <h2>Version 5.1 Stable</h2>
               <p><strong>Released August 14, 2026</strong></p>
@@ -67,7 +78,7 @@
                 <li>Applied a stronger card overlay so text and controls remain clear without hiding the background.</li>
                 <li>Changed subsection labels to a higher-contrast pale periwinkle.</li>
                 <li>Improved checked boxes with brighter periwinkle fills and white checkmarks, and made unchecked boxes easier to see with blue-gray outlines.</li>
-                <li>Kept Launch Methods full width, placed Keybind Viewers in the left column and Game-Specific Apps on the right, and retained that keybind-first order when the groups stack vertically.</li>
+                <li>Kept Launch Methods full width, placed Keybind Charts in the left column and Game-Specific Apps on the right, and retained that keybind-first order when the groups stack vertically.</li>
                 <li>Enlarged the selected game title by more than 30% and removed the redundant “Game Launch” suffix.</li>
                 <li>Added resize, scrolling, clipping, and responsive-column geometry tests across minimum, standard, wide, tall, and scrolled layouts.</li>
                 <li>Preserved existing game settings, controller presets, Utility Apps, update behavior, and 4.x/5.0 migration. Racing mode and additional controller-manufacturer presets remain deferred.</li>
@@ -90,7 +101,7 @@
               <ul>
                 <li>Moved <strong>Add launch method</strong> beside the <strong>Launch Methods</strong> section title on Main.</li>
                 <li>Moved <strong>Add game-specific app</strong> beside the <strong>Game-Specific Apps</strong> section title.</li>
-                <li>Moved <strong>Add keybind viewer</strong> beside the <strong>Keybind Viewers</strong> section title.</li>
+                <li>Moved <strong>Add keybind chart</strong> beside the <strong>Keybind Charts</strong> section title.</li>
                 <li>Removed the three separate button rows to reduce vertical space without changing saved settings, entry behavior, or launch selections.</li>
               </ul>
             </section>
@@ -101,66 +112,11 @@
                 <li>Replaced Main Loadout profiles with automatically saved per-game settings while keeping controller presets independent.</li>
                 <li>Added native tiles, Steam launching, and curated resources for Star Citizen, DCS World, Nuclear Option, Korea. IL-2 Series, Microsoft Flight Simulator, Elite Dangerous, X4: Foundations, X-Plane 12, and War Thunder.</li>
                 <li>Added a Main-page Reorder mode with per-tile left and right controls, user-added game tiles, and a fixed Add game tile at the end.</li>
-                <li>Organized each Game Launch card into Launch Methods, Game-Specific Apps, and Keybind Viewers, including multiple module-specific keybind viewers.</li>
+                <li>Organized each Game Launch card into Launch Methods, Game-Specific Apps, and Keybind Charts, including multiple module-specific charts.</li>
                 <li>Made TrackIR, Tobii, OpenTrack, GameGlass, VoiceAttack, WingmanAI, and DCS-SRS universal Utility Apps with per-game launch choices.</li>
                 <li>Added responsive Game Web Resources cards and configurable entries throughout Main and Settings.</li>
                 <li>Made Preferences universal, removed automatic profile launch at startup, and preserved existing 4.x data during migration.</li>
                 <li>Kept deleted native entries deleted across catalog updates and safely cleaned stale Utility App selections.</li>
-              </ul>
-            </section>
-            <section id="version-4-0-5">
-              <h2>Version 4.0.5 Stable</h2>
-              <p><strong>Released August 2, 2026</strong></p>
-              <ul>
-                <li>Updated auto-detection to recognize the current <code>GameGlass Hub.exe</code> application and its standard per-user installation folder.</li>
-                <li>Retained compatibility with legacy <code>GameGlass.exe</code> installations and updater layouts.</li>
-              </ul>
-            </section>
-            <section id="version-4-0-4">
-              <h2>Version 4.0.4 Stable</h2>
-              <p><strong>Released August 1, 2026</strong></p>
-              <ul>
-                <li>Fixed Joystick Gremlin launches so Gremlin starts from its own executable directory instead of inheriting Star-Launcher's folder.</li>
-                <li>Prevented Gremlin's DILL library from creating <code>dill_debug.log</code> beside Star-Launcher, including on the Desktop when the portable app is stored there.</li>
-              </ul>
-            </section>
-            <section id="version-4-0-3">
-              <h2>Version 4.0.3 Stable</h2>
-              <p><strong>Released July 31, 2026</strong></p>
-              <ul>
-                <li>Reordered the Setup cards to match Main: Games, References, Applications, then Websites.</li>
-                <li>Simplified update wording and reduced updating to two actions: open the updater to check, then select <strong>Update and restart</strong>.</li>
-                <li>Standardized Main-page launch icons and moved the controller inclusion toggle below its preset selector.</li>
-                <li>Added a Preferences button beside the update check for opening the official Star-Launcher website.</li>
-                <li><strong>Terminology audit changes:</strong> Updated the application, executable metadata, developer documentation, and portable release documentation so Star-Launcher describes broader simulator workflows while retaining precise Star Citizen and RSI wording inside that native integration.</li>
-              </ul>
-            </section>
-            <section id="version-4-0-0">
-              <h2>Version 4.0 Stable</h2>
-              <p><strong>Released July 30, 2026</strong></p>
-              <h3>Highlights</h3>
-              <ul>
-                <li>Redesigned the Main and Settings screens around consistent Games, References, Supporting Apps, and Websites cards.</li>
-                <li>Consolidated visibility, paths, web addresses, administrator settings, and custom-entry management into the matching Setup card.</li>
-                <li>Added clear, labeled dialogs for creating and editing custom games, applications, references, and websites.</li>
-                <li>Added Star Citizen Wiki to the built-in website list.</li>
-                <li>Improved profile and controller-preparation controls while retaining the established launch workflow and pre-flight checks.</li>
-                <li>Added an optional automatic update check at startup, enabled by default for new preferences, alongside the manual update check.</li>
-                <li>Promoted the verified portable self-updater to the stable channel so supported installations can update in place while preserving profiles and preferences.</li>
-                <li>Refined the Deep-Space Indigo interface, card layout, brand presentation, action buttons, and status messaging.</li>
-              </ul>
-              <h3>Download package</h3>
-              <p>Star-Launcher 4.0 Stable is distributed as <strong>Star-Launcher-4.0.0.zip</strong>, a verified portable package containing the executable, README, release manifest, and executable checksum.</p>
-              <p>Existing Star-Launcher 3.0 installations can obtain this release through the built-in updater or by replacing the release files manually. Profiles and preferences remain in place.</p>
-            </section>
-            <section id="version-3-0-0">
-              <h2>Version 3.0 Stable</h2>
-              <p><strong>Released July 28, 2026</strong></p>
-              <h3>Overview</h3>
-              <ul>
-                <li>Introduced the Star-Launcher identity and Deep-Space Indigo interface.</li>
-                <li>Expanded profiles, controller presets, references, window placement, and automatic launch options.</li>
-                <li>Added the first portable self-updater and improved launch progress, recovery, accessibility, and reliability.</li>
               </ul>
             </section>
             <nav class="docs-next" aria-label="Release navigation">
